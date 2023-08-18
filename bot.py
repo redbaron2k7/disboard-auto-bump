@@ -30,7 +30,7 @@ async def on_ready():
                             msg_time = message.created_at
                             if (datetime.datetime.now(datetime.timezone.utc) - msg_time).total_seconds() > 7200:
                                 await bump(client, guild_id, channel)
-                                await channel.send('Bumped the server! Check my bio!')
+                                await print("Bumped the guild " + str(guild_id) + "!")
                         break
 
         await asyncio.sleep(60)
