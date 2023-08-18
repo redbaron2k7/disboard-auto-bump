@@ -26,11 +26,11 @@ async def on_ready():
                     if message.author.id == 302050872383242240:  # This is the ID of Disboard
                         embed = message.embeds[0]
                         if 'Bump done' in embed.description:
-                            print("Bump detected")
+                            print("Bump detected. Guild: " + str(guild_id) + " Channel: " + str(channel))
                             msg_time = message.created_at
                             if (datetime.datetime.now(datetime.timezone.utc) - msg_time).total_seconds() > 7200:
-                                await channel.send('Bumping the server! Check my bio!')
                                 await bump(client, guild_id, channel)
+                                await channel.send('Bumped the server! Check my bio!')
                         break
 
         await asyncio.sleep(60)
