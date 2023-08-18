@@ -31,7 +31,7 @@ async def on_ready():
                     msg_time = message.created_at
                     if (datetime.datetime.now(datetime.timezone.utc) - msg_time).total_seconds() > 7200:
                         await channel.send('Bumping Server...')
-                        send_bump_request(channel.id, guild_id)
+                        await send_bump_request(channel.id, guild_id)
                 break
 
 app = Flask('')
