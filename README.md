@@ -1,4 +1,4 @@
-# Disboard-Bump-Selfbot
+# Disboard-Auto-Bump
 
 This is a [Python](https://www.python.org)-based Discord selfbot using the `discord.py-self` library. The selfbot automatically bumps your Discord server every 2 hours, currently this only supports [Disboard](https://disboard.org)
 
@@ -25,13 +25,13 @@ This is a [Python](https://www.python.org)-based Discord selfbot using the `disc
 ### Step 1: Git clone repository
 
 ```
-git clone https://github.com/redbaron2k7/Disboard-Bump-Selfbot
+git clone https://github.com/redbaron2k7/Disboard-Auto-Bump
 ```
 
 ### Step 2: Changing directory to cloned directory
 
 ```
-cd Disboard-Bump-Selfbot
+cd Disboard-Auto-Bump
 ```
 
 ### Step 3: Getting your Discord token
@@ -42,7 +42,7 @@ cd Disboard-Bump-Selfbot
 - Type a message in any chat, or change server
 - Find one of the following headers: `"messages?limit=50"`, `"science"` or `"preview"` under `"Name"` and click on it
 - Scroll down until you find `"Authorization"` under `"Request Headers"`
-- Copy the value which is yor token
+- Copy the value which is your token
 
 ### Step 4: Rename `example.env` to `.env` and put the discord token and the bump channel IDs (you will get rate limited at over 5 channels). It'll look like this:
 
