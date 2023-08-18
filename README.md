@@ -44,12 +44,12 @@ cd Disboard-Bump-Selfbot
 - Scroll down until you find `"Authorization"` under `"Request Headers"`
 - Copy the value which is yor token
 
-### Step 4: Rename `example.env` to `.env` and put the discord token and the bump channel ID. It'll look like this:
+### Step 4: Rename `example.env` to `.env` and put the discord token and the bump channel IDs (you will get rate limited at over 5 channels). It'll look like this:
 
 ```
 DISCORD_TOKEN=DISCORD_TOKEN_GOES_HERE
 BOT_PREFIX=$
-CHANNEL_ID=BUMP_CHANNEL_ID_GOES_HERE
+CHANNEL_IDS=channel1,channel2,channel3
 ```
 
 ### Step 5: Install all the dependencies and run the bot
