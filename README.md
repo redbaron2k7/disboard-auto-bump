@@ -17,9 +17,10 @@ This is a [Python](https://www.python.org)-based Discord selfbot using the `disc
 - [x] Fully Automatic: Just configure it, run it, and sit back and enjoy your server being boosted for you!
 
 ## Commands
-```
-- $add [ChannelID] - Adds a channel ID to the list of monitored channels
-```
+
+- $add (Channel ID) - Adds a channel ID to the list of monitored channels
+- $join (Invite Link) - Joins a server from invite link. !PROBABLY WONT WORK DUE TO CAPTCHAS!
+
 # Steps to install and run:
 
 ### Step 1: Git clone repository

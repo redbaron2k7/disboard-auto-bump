@@ -55,6 +55,14 @@ async def add(ctx, channel_id: int):
 
     await ctx.send(f"Channel ID {channel_id} added successfully")
 
+@client.command()
+async def join(ctx, invite: str):
+    try:
+        await client.accept_invite(invite)
+        await ctx.send(f"Successfully joined the server from invite: {invite}")
+    except Exception as e:
+        await ctx.send(f"An error occurred while trying to join the server: {str(e)}")
+
 async def bump(client, guild_id, channel):
     guild = channel.guild
     command_name = 'bump'
